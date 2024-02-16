@@ -20,6 +20,8 @@ func add(x, y int) int {
 	fmt.Println(x, " + ", y, " = ", x+y)
 	return x + y
 }
+
+
 var mun int = 10
 var p *int
 var k = &mun
@@ -30,4 +32,9 @@ func main() {
 	var gul int = add(5,7)
 	fmt.Println(gul)
 	fmt.Println(*k)
+	n := new(int)
+	fmt.Println("value = ", *n)
+
+	*n = 87
+	fmt.Println("value = ", *n)
 }
